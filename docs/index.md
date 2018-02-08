@@ -1,6 +1,5 @@
 
-# Welcome to urbanoctowaddle's documentation!
-
+# urbanoctowaddle
 
 ### MathJax test
 
