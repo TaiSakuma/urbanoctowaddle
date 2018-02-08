@@ -55,7 +55,7 @@ source_parsers = {
 source_suffix = ['.rst', '.md']
 
 # The master toctree document.
-master_doc = 'index'
+master_doc = 'contents'
 
 # General information about the project.
 project = u'urbanoctowaddle'
@@ -129,10 +129,10 @@ html_static_path = ['_static']
 html_sidebars = {
     '**': [
         'relations.html',  # needs 'show_related': True theme option to display
+        'globaltoc.html',
         'searchbox.html',
     ]
 }
-html_sidebars = {}
 
 # -- Options for HTMLHelp output ------------------------------------------
 
