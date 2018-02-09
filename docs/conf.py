@@ -20,7 +20,6 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
 sys.path.insert(0, os.path.dirname(os.path.abspath('.')))
-import sphinx_bootstrap_theme
 import recommonmark
 from recommonmark.transform import AutoStructify
 
@@ -93,30 +92,7 @@ todo_include_todos = True
 
 
 # -- Options for HTML output ----------------------------------------------
-
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-#
-# html_theme = 'alabaster'
-html_theme = 'bootstrap'
-html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
-
-# Theme options are theme-specific and customize the look and feel of a theme
-# further.  For a list of options available for each theme, see the
-# documentation.
-#
-# html_theme_options = {}
-html_theme_options = {
-    'navbar_site_name': "Contents",
-    'navbar_links': [
-        ('<i class="fab fa-github fa-lg"></i>', "https://github.com/TaiSakuma/urbanoctowaddle", True),
-    ],
-    'navbar_sidebarrel': False,
-    'navbar_pagenav': False,
-    'source_link_position': "footer",
-    'bootswatch_theme': "yeti",
-    'bootstrap_version': "3",
-}
+from .conf_sphinx_bootstrap_theme import *
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
