@@ -3,7 +3,7 @@
 .. toctree::
    :maxdepth: 1
 
-   index
+   Home <index>
    doc1
    doc2
 
