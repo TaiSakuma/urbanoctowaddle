@@ -166,7 +166,7 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
-# AutoStructify
+##__________________________________________________________________||
 def setup(app):
     app.add_config_value('recommonmark_config', {
             'url_resolver': lambda url: github_doc_root + url,
@@ -174,3 +174,4 @@ def setup(app):
             }, True)
     app.add_transform(AutoStructify)
 
+##__________________________________________________________________||
