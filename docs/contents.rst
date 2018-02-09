@@ -1,13 +1,13 @@
 .. _contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    index
    doc1
    doc2
 
-   urbanoctowaddle
+   api
 
 Indices and tables
 ==================
