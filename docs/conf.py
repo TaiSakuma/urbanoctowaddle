@@ -92,7 +92,7 @@ todo_include_todos = True
 
 
 # -- Options for HTML output ----------------------------------------------
-from .conf_sphinx_bootstrap_theme import *
+from conf_sphinx_bootstrap_theme import *
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
