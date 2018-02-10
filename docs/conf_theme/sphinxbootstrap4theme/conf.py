@@ -63,5 +63,8 @@ html_theme_options = {
 
 templates_path_theme = ['conf_theme/sphinxbootstrap4theme/templates']
 html_static_path_theme = ['conf_theme/sphinxbootstrap4theme/static']
+stylesheets_theme = [
+    'style.css' # relative to 'static'
+]
 
 ##__________________________________________________________________||
