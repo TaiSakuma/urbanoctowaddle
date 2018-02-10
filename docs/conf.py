@@ -43,6 +43,7 @@ extensions = [
     'sphinx.ext.githubpages',
     'sphinx.ext.autosummary',
     'sphinx.ext.napoleon',
+    'sphinxjp.themes.basicstrap'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -96,7 +97,12 @@ todo_include_todos = True
 
 
 # -- Options for HTML output ----------------------------------------------
-from conf_sphinx_bootstrap_theme import *
+# from conf_theme.sphinx_bootstrap_theme.conf import *
+# from conf_theme.sphinxbootstrap4theme.conf import *
+from conf_theme.sphinxjp_themes_basicstrap.conf import *
+# html_theme = 'basic'
+
+templates_path = templates_path_theme + templates_path
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
