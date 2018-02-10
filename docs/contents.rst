@@ -4,6 +4,7 @@
    :maxdepth: 1
 
    Home <index>
+   Lorem <lorem>
    doc1
    doc2
 
