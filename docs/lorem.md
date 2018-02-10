@@ -6,7 +6,7 @@
 
 ## Dant in non olim ulcisci est rogantum
 
-Lorem markdownum uno, [sulcat](http://cum.net/)! Magni et haut iacet agitantem
+Lorem markdownum uno, Magni et haut iacet agitantem
 **nos gloria** Latinis profanam, templi sit quis raptae acutae.
 
 > Sensit animoque percutit inplet inmurmurat mihi intabescere viri sustinet esse
