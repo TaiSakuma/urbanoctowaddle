@@ -15,4 +15,7 @@ html_theme_options = {
     'bootstrap_version': "3",
 }
 
+from conf import templates_path
+templates_path += ['_templates_sphinx_bootstrap_theme']
+
 ##__________________________________________________________________||
