@@ -236,7 +236,9 @@
     <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}" />
     {%- endif %}
     {%- endblock %}
-    {%- block extrahead %} {% endblock %}
+    {%- block extrahead %}
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    {% endblock %}
   </head>
   <body role="document">
 
