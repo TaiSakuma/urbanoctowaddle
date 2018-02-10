@@ -12,7 +12,6 @@ example_google
    :toctree: generated
 
    example_google.function_with_types_in_docstring
-   example_google.function_with_pep484_type_annotations
    example_google.module_level_function
    example_google.example_generator
    example_google.ExampleError
@@ -28,7 +27,6 @@ example_numpy
    :toctree: generated
 
    example_numpy.function_with_types_in_docstring
-   example_numpy.function_with_pep484_type_annotations
    example_numpy.module_level_function
    example_numpy.example_generator
    example_numpy.ExampleError
