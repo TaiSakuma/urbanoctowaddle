@@ -61,7 +61,6 @@ html_theme_options = {
     'table_thead_class' : 'inverse'
 }
 
-from conf import templates_path
-templates_path += ['_templates_sphinxbootstrap4theme']
+templates_path_theme = ['conf_theme/sphinxbootstrap4theme/templates']
 
 ##__________________________________________________________________||
