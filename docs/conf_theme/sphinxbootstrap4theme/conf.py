@@ -27,7 +27,7 @@ html_theme_options = {
 
     # Link name for global TOC in navbar.
     # (Default: 'Pages')
-    'navbar_pages_title' : 'Pages',
+    'navbar_pages_title' : 'Contents',
 
     # Specify a list of menu in navbar.
     # Tuples forms:
@@ -35,9 +35,8 @@ html_theme_options = {
     # Third argument:
     # True indicates an external link.
     # False indicates path of pages in the document.
-    'navbar_links' : [
-         ('Home', 'index', False),
-         ("Link", "http://example.com", True)
+    'navbar_links': [
+        ('<i class="fab fa-github fa-lg"></i>', "https://github.com/TaiSakuma/urbanoctowaddle", True),
     ],
 
     # Total width(%) of the document and the sidebar.
