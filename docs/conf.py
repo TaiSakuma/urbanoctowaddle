@@ -113,6 +113,9 @@ html_sidebars = {
     'index': [
         'localtoc.html',
     ],
+    'lorem': [
+        'localtoc.html',
+    ],
 }
 
 # -- Options for HTMLHelp output ------------------------------------------
