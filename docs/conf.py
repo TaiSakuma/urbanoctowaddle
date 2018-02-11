@@ -18,8 +18,19 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('.'))
-sys.path.insert(0, os.path.dirname(os.path.abspath('.')))
+cwd = os.path.abspath('.')
+sys.path.insert(0, cwd)
+sys.path.insert(0, os.path.dirname(cwd))
+here = os.path.dirname(os.path.abspath(__file__))
+oneup = os.path.dirname(here)
+external = os.path.join(oneup, 'external')
+sys.path.insert(0, os.path.join(external, 'atdocbs'))
+
+del cwd
+del here
+del oneup
+del external
+
 import recommonmark
 from recommonmark.transform import AutoStructify
 
@@ -99,7 +110,8 @@ todo_include_todos = True
 # -- Options for HTML output ----------------------------------------------
 # from conf_theme.sphinx_bootstrap_theme.conf import *
 # from conf_theme.sphinxbootstrap4theme.conf import *
-from conf_theme.sphinxjp_themes_basicstrap.conf import *
+# from conf_theme.sphinxjp_themes_basicstrap.conf import *
+from conf_theme.atdocbs.conf import *
 # html_theme = 'basic'
 
 templates_path = templates_path_theme + templates_path
