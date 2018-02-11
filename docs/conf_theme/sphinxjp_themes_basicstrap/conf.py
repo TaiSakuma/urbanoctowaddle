@@ -78,6 +78,7 @@ html_theme_options = {
 templates_path_theme = ['conf_theme/sphinxjp_themes_basicstrap/templates']
 html_static_path_theme = ['conf_theme/sphinxjp_themes_basicstrap/static']
 stylesheets_theme = [
+    'style.css' # relative to 'static'
 ]
 
 ##__________________________________________________________________||
