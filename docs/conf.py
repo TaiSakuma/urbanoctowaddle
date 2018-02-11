@@ -111,16 +111,27 @@ todo_include_todos = True
 # from conf_theme.sphinx_bootstrap_theme.conf import *
 # from conf_theme.sphinxbootstrap4theme.conf import *
 # from conf_theme.sphinxjp_themes_basicstrap.conf import *
-from conf_theme.atdocbs.conf import *
+# from conf_theme.atdocbs.conf import *
+from conf_theme.sphinx_rtd_theme.conf import *
 # html_theme = 'basic'
 
-templates_path = templates_path_theme + templates_path
+# html_context = {
+#     'html5_doctype': True
+# }
+
+try:
+    templates_path = templates_path_theme + templates_path
+except NameError:
+    pass
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-html_static_path = html_static_path_theme + html_static_path
+try:
+    html_static_path = html_static_path_theme + html_static_path
+except NameError:
+    pass
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -200,7 +211,10 @@ def setup(app):
             'auto_toc_tree_section': 'Contents',
             }, True)
     app.add_transform(AutoStructify)
-    for s in stylesheets_theme:
-        app.add_stylesheet(s)
+    try:
+        for s in stylesheets_theme:
+            app.add_stylesheet(s)
+    except NameError:
+        pass
 
 ##__________________________________________________________________||
